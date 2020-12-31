@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+django = "*"
 
 [dev-packages]
 flake8 = "*"
@@ -13,4 +14,4 @@ pytest-cov = "*"
 pytest-mock = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
