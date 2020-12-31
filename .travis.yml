@@ -1,6 +1,6 @@
 language: python
 dist: xenial
-sudo: true
+
 python:
   - 3.8
 env:
@@ -12,6 +12,6 @@ install:
   - pipenv sync --dev
 script:
   - pipenv run flake8 .
-  - pytest libpythonpro --cov=libpythonpro
+  - pytest pypro --cov=pypro
 after_success:
   - codecov
