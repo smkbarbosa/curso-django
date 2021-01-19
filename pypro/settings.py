@@ -31,6 +31,8 @@ DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
+AUTH_USER_MODEL = 'base.User'
+
 COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
 # Application definition
 
